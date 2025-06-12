@@ -435,7 +435,7 @@ Livre* string_to_livre(char* str, Langue **langues, Auteur **authors, Categorie 
         fprintf(stderr, "Erreur d'allocation mémoire\n");
         return NULL;
     }
-
+    // TODO: verifier cette ligne !
     livre->id = id;
     livre->titre = strdup(titre);
     livre->isbn = strdup(isbn);
